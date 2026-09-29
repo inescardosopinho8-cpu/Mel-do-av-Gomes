@@ -1,0 +1,324 @@
+/* =========================
+  CONFIGURAÇÕES GERAIS
+========================= */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f8f3e8;
+   color: #3d2b1f;
+   line-height: 1.6;
+}
+a {
+   text-decoration: none;
+   color: inherit;
+}
+h1,
+h2,
+h3 {
+   font-family: Georgia, serif;
+   font-weight: normal;
+}
+ img {
+      width: 130px;
+      height: auto;
+      max-width: 150;
+   }
+
+/* =========================
+  MENU
+========================= */
+.navbar {
+   min-height: 90px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 8%;
+   border-bottom: 1px solid #e1d6c1;
+}
+.logo {
+   font-family: Georgia, serif;
+   font-size: 25px;
+   font-weight: bold;
+}
+.menu {
+   display: flex;
+   gap: 30px;
+   list-style: none;
+}
+.menu a {
+   font-size: 14px;
+   transition: 0.3s;
+}
+.menu a:hover,
+.menu a.ativo {
+   color: #a47719;
+}
+
+/* =========================
+  HERO
+========================= */
+.hero {
+   min-height: 650px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+   gap: 60px;
+   padding: 80px 9%;
+   background:
+       linear-gradient(
+           90deg,
+           #f8f3e8,
+           #f1dfb8
+       );
+}
+.hero-text {
+   max-width: 600px;
+}
+.subtitulo {
+   color: #a47719;
+   font-size: 12px;
+   font-weight: bold;
+   letter-spacing: 3px;
+   margin-bottom: 20px;
+}
+.hero h1 {
+   font-size: 65px;
+   line-height: 1.05;
+   margin-bottom: 25px;
+}
+.hero-text > p:not(.subtitulo) {
+   color: #66584b;
+   font-size: 18px;
+   margin-bottom: 30px;
+}
+.botao {
+   display: inline-block;
+   background-color: #8b650f;
+   color: white;
+   padding: 14px 25px;
+   font-size: 14px;
+   transition: 0.3s;
+}
+.botao:hover {
+   background-color: #604507;
+}
+
+/* =========================
+  ESPAÇOS PARA FOTOGRAFIAS
+========================= */
+.imagem-placeholder {
+   min-height: 430px;
+   background-color: #d9c8a8;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   color: #725a35;
+}
+.imagem-placeholder span {
+   font-family: Georgia, serif;
+   font-size: 25px;
+}
+.imagem-placeholder small {
+   margin-top: 10px;
+   font-size: 12px;
+}
+
+/* =========================
+  SECÇÕES
+========================= */
+.secao {
+   padding: 100px 9%;
+}
+.historia {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 70px;
+   align-items: center;
+}
+.texto {
+   max-width: 600px;
+}
+.texto h2,
+.titulo-secao h2 {
+   font-size: 48px;
+   line-height: 1.1;
+   margin-bottom: 25px;
+}
+.texto p {
+   color: #66584b;
+   margin-bottom: 18px;
+}
+.link {
+   color: #a47719;
+   font-weight: bold;
+   font-size: 14px;
+}
+
+/* =========================
+  PRODUTOS
+========================= */
+.produtos {
+   background-color: #fffdf8;
+}
+.titulo-secao {
+   text-align: center;
+   max-width: 700px;
+   margin: 0 auto 55px;
+}
+.titulo-secao > p:last-child {
+   color: #66584b;
+}
+.produtos-grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 25px;
+}
+.produto {
+   background-color: #f1eadc;
+}
+.produto-imagem {
+   height: 280px;
+   background-color: #d9c8a8;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #725a35;
+   font-family: Georgia, serif;
+   font-size: 22px;
+}
+.produto-info {
+   padding: 25px;
+}
+.produto-info h3 {
+   font-size: 27px;
+   margin-bottom: 10px;
+}
+.produto-info p {
+   font-size: 14px;
+   color: #66584b;
+   margin-bottom: 18px;
+}
+.produto-info a {
+   color: #a47719;
+   font-size: 14px;
+   font-weight: bold;
+}
+
+/* =========================
+  FRASE
+========================= */
+.frase {
+   padding: 100px 10%;
+   text-align: center;
+   background-color: #80602e;
+   color: white;
+}
+.aspas {
+   font-family: Georgia, serif;
+   font-size: 60px;
+}
+.frase h2 {
+   font-size: 45px;
+   max-width: 800px;
+   margin: 10px auto 20px;
+}
+.frase p:last-child {
+   color: #ead8ad;
+}
+
+/* =========================
+  VALORES
+========================= */
+.valores-grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 30px;
+}
+.valores-grid > div {
+   border-top: 1px solid #cbbda4;
+   padding-top: 20px;
+}
+.valores-grid span {
+   color: #a47719;
+}
+.valores-grid h3 {
+   font-size: 25px;
+   margin: 15px 0 8px;
+}
+.valores-grid p {
+   color: #66584b;
+   font-size: 14px;
+}
+
+/* =========================
+  RODAPÉ
+========================= */
+footer {
+   display: grid;
+   grid-template-columns: 2fr 1fr 1fr;
+   gap: 40px;
+   padding: 65px 8%;
+   background-color: #2c251e;
+   color: #eee4d0;
+}
+footer h3 {
+   color: #d5a94f;
+   font-size: 25px;
+}
+footer h4 {
+   color: #d5a94f;
+   margin-bottom: 15px;
+}
+footer a,
+footer p {
+   display: block;
+   color: #c9c0b3;
+   font-size: 13px;
+   margin-bottom: 7px;
+}
+.copyright {
+   text-align: center;
+   padding: 15px;
+   background-color: #211c18;
+   color: #91877b;
+   font-size: 11px;
+}
+
+/* =========================
+  TELEMÓVEL
+========================= */
+@media (max-width: 900px) {
+   .navbar {
+       flex-direction: column;
+       gap: 20px;
+   }
+   .menu {
+       flex-wrap: wrap;
+       justify-content: center;
+   }
+   .hero {
+       grid-template-columns: 1fr;
+       padding: 60px 7%;
+   }
+   .hero h1 {
+       font-size: 48px;
+   }
+   .historia {
+       grid-template-columns: 1fr;
+   }
+   .produtos-grid {
+       grid-template-columns: 1fr;
+   }
+   .valores-grid {
+       grid-template-columns: 1fr;
+   }
+   footer {
+       grid-template-columns: 1fr;
+   }
+}
