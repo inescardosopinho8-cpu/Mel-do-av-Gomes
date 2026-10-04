@@ -1227,6 +1227,312 @@ footer {
         padding: 60px 20px 25px;
 
     }
+/* =====================================
 
+   RESPONSIVO — TABLETS E TELEMÓVEIS
+
+===================================== */
+
+@media (max-width: 900px) {
+
+    /* Cabeçalho e menu */
+
+    .navbar {
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+    nav {
+
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 8px 18px;
+
+    }
+
+    nav a {
+
+        font-size: 10px;
+
+        letter-spacing: 1px;
+
+    }
+
+    /* Secções principais */
+
+    .hero,
+
+    .introducao-interior,
+
+    .historia-bloco,
+
+    .contactos-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+    }
+
+    .hero {
+
+        padding: 55px 24px;
+
+        min-height: auto;
+
+    }
+
+    .hero h1 {
+
+        font-size: clamp(44px, 9vw, 65px);
+
+    }
+
+    .imagem-principal {
+
+        height: 420px;
+
+    }
+
+    .secao {
+
+        padding: 70px 24px;
+
+    }
+
+    .pagina-topo {
+
+        padding: 75px 24px 45px;
+
+    }
+
+    .pagina-topo h1 {
+
+        font-size: clamp(48px, 9vw, 70px);
+
+    }
+
+    /* Produtos */
+
+    .produtos-grid,
+
+    .produtos-grid.quatro {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 18px;
+
+    }
+
+    .produto-imagem,
+
+    .produtos-grid.quatro .produto-imagem {
+
+        height: 280px;
+
+    }
+
+    .produto-info {
+
+        padding: 18px;
+
+    }
+
+    .produto-info h3 {
+
+        font-size: 26px;
+
+    }
+
+    /* Valores e área de cliente */
+
+    .valores {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .cliente-wrapper {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .caixa {
+
+        padding: 28px 22px;
+
+    }
+
+    /* Rodapé */
+
+    .footer-topo,
+
+    .footer-bottom {
+
+        flex-direction: column;
+
+        gap: 25px;
+
+    }
+
+}
+
+
+/* =====================================
+
+   TELEMÓVEIS PEQUENOS
+
+===================================== */
+
+@media (max-width: 600px) {
+
+    .logo {
+
+        font-size: 26px;
+
+    }
+
+    nav {
+
+        gap: 8px 12px;
+
+    }
+
+    nav a {
+
+        font-size: 9px;
+
+    }
+
+    .hero {
+
+        padding: 45px 18px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 46px;
+
+    }
+
+    .hero p {
+
+        font-size: 14px;
+
+    }
+
+    .hero-botoes {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+    .hero-botoes .botao {
+
+        text-align: center;
+
+    }
+
+    .imagem-principal {
+
+        height: 330px;
+
+    }
+
+    .secao {
+
+        padding: 55px 18px;
+
+    }
+
+    .secao-cabecalho h2 {
+
+        font-size: 43px;
+
+    }
+
+    /* Um produto por linha */
+
+    .produtos-grid,
+
+    .produtos-grid.quatro {
+
+        grid-template-columns: minmax(0, 1fr);
+
+    }
+
+    .produto-imagem,
+
+    .produtos-grid.quatro .produto-imagem {
+
+        height: 340px;
+
+    }
+
+    .pagina-topo {
+
+        padding: 60px 18px 35px;
+
+    }
+
+    .pagina-topo h1 {
+
+        font-size: 49px;
+
+    }
+
+    .introducao-interior {
+
+        padding: 65px 22px;
+
+    }
+
+    .historia-bloco h2 {
+
+        font-size: 42px;
+
+    }
+
+    .destaque {
+
+        padding: 80px 22px;
+
+    }
+
+    .destaque h2 {
+
+        font-size: 43px;
+
+    }
+
+    .mapa {
+
+        min-height: 280px;
+
+    }
+
+    footer {
+
+        padding: 50px 20px 25px;
+
+    }
+
+}
+ 
 }
  
