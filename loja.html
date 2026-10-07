@@ -6,6 +6,16 @@
 <title>Loja | Mel do Avô Gomes</title>
 <link rel="stylesheet" href="style.css">
 </head>
+<script>
+    let produtos=[];
+    function adicionarProduto(nome, preco){
+        produtos.push({ 
+            nome: nome,
+            preco: preco
+        });
+        alert(nome + "Foi adicionado ao pedido!")
+    }
+</script>
 <body>
 <header>
 <div class="navbar">
@@ -50,49 +60,46 @@
 <!-- MEL DE MONTANHA -->
 <article class="produto">
 <div class="produto-imagem">
-<!--
-<img src="imagens/mel-montanha.jpg"
 
-                         alt="Mel de Montanha">
+<img src="imagens/mel de montanha.png"alt="Mel de Montanha">
 
-                    -->
+            
 </div>
 <div class="produto-info">
 <h3>Mel de Montanha</h3>
 <p>
 
-                        Mel de meia altitude, onde o rosmaninho
+      Mel de meia altitude, onde o rosmaninho
 
-                        encontra castanheiros, urzes e carvalhos.
+     encontra castanheiros, urzes e carvalhos.
 
-                        Apresenta uma cor escura e um paladar forte,
-
-                        equilibrado entre o doce, o amargo e o salgado.
+      Apresenta uma cor escura e um paladar forte,
+   equilibrado entre o doce, o amargo e o salgado.
 </p>
 <p>
 
-                        Perfil aromático complexo, com expressões
+      Perfil aromático complexo, com expressões
 
-                        florais e frutadas, madeira seca e um suave
+      florais e frutadas, madeira seca e um suave
 
-                        toque de caramelo.
+       toque de caramelo.
 </p>
 <div class="preco">
 
                         12 € / kg
+
 </div>
+<button class="botao botao-dourado" onclick="adicionarProduto('Mel de Montanha' , 12)">
+    Comprar
+</button>
 </div>
 </article>
 
 <!-- MEL DE ROSMANINHO -->
 <article class="produto">
 <div class="produto-imagem">
-<!--
-<img src="imagens/mel-rosmaninho.jpg"
 
-                         alt="Mel de Rosmaninho">
-
-                    -->
+<img src="imagens/mel de rosmaninho.jpg">
 </div>
 <div class="produto-info">
 <h3>Mel de Rosmaninho</h3>
@@ -116,18 +123,21 @@
 
                         10 € / kg
 </div>
+<button class="botao botao-dourado" onclick="adicionarProduto('Mel de Rosmaninho' , 10)">
+    Comprar
+</button>
 </div>
 </article>
 
 <!-- MEL MULTIFLORAL -->
 <article class="produto">
 <div class="produto-imagem">
-<!--
-<img src="imagens/mel-multifloral.jpg"
 
-                         alt="Mel Multifloral">
+<img src="imagens/mel multifloral.jpg"
 
-                    -->
+      alt="Mel Multifloral">
+
+
 </div>
 <div class="produto-info">
 <h3>Mel Multifloral</h3>
@@ -151,18 +161,21 @@
 
                         9 € / kg
 </div>
+<button class="botao botao-dourado" onclick="adicionarProduto('Mel Multifloral' , 9)">
+    Comprar
+</button>
 </div>
 </article>
 
 <!-- PÓLEN -->
 <article class="produto">
 <div class="produto-imagem">
-<!--
+
 <img src="imagens/polen.jpg"
 
                          alt="Pólen">
 
-                    -->
+            
 </div>
 <div class="produto-info">
 <h3>Pólen</h3>
@@ -184,6 +197,9 @@
 
                         15 € / kg
 </div>
+<button class="botao botao-dourado" onclick="adicionarProduto('Pólen' , 15)">
+    Comprar
+</button>
 </div>
 </article>
 

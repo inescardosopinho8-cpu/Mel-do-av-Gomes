@@ -28,6 +28,8 @@
 
 }
 
+
+
 * {
 
     margin: 0;
@@ -127,6 +129,8 @@ header {
     white-space: nowrap;
 
 }
+
+
 
 .logo small {
 
@@ -407,7 +411,7 @@ h3 {
     z-index: 1;
 
 }
-
+ 
 /* =====================================================
 
    SECÇÕES
@@ -790,6 +794,39 @@ h3 {
 
 ===================================================== */
 
+.imagem-historia {height: 570px;
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            rgba(184, 138, 59, 0.15),
+
+            rgba(59, 42, 31, 0.18)
+
+        );
+
+    position: relative;
+
+    overflow: hidden;
+ }
+ 
+ 
+ .imagem-historia  {
+
+    width: 30%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    position: relative;
+
+    z-index: 1;
+
+}
 .historia-bloco {
 
     display: grid;
@@ -1004,27 +1041,23 @@ h3 {
 
 }
 
-.mapa {
 
-    min-height: 420px;
+.imagem-final {
 
-    background: var(--creme-escuro);
+        width: 100%;
+        height: 1000px;
+        overflow: hidden;
+    }
+    .imagem-final img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    
 
-    display: flex;
 
-    align-items: center;
 
-    justify-content: center;
-
-    color: var(--castanho-claro);
-
-    text-transform: uppercase;
-
-    letter-spacing: 3px;
-
-    font-size: 10px;
-
-}
 
 /* =====================================================
 
@@ -1520,11 +1553,7 @@ footer {
 
     }
 
-    .mapa {
 
-        min-height: 280px;
-
-    }
 
     footer {
 
